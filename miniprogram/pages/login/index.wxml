@@ -1,0 +1,11 @@
+<!--pages/login/index.wxml-->
+<view class="login_container">
+  <view class="login_title">新高考语文集分宝</view>
+  <view class="login_img">
+    <image src="{{ loginImg }}"></image>
+  </view>
+  <view class="login_btns">
+    <van-button plain round type="primary" size="large" bind:click="handleNavigateToTest">游客登录</van-button>
+    <van-button round type="primary" size="large" bind:click="handleNavigateToHome">会员登录</van-button>
+  </view>
+</view>

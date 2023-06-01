@@ -1,0 +1,50 @@
+/* pages/disorderError/index.wxss */
+
+.disorder_error_container {
+  height: auto;
+  min-height: 100vh;
+  background-color: #EDF5F1;
+  padding: 60rpx;
+}
+
+image {
+  width: 298rpx;
+  height: 294rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+text{
+  font-size: 34rpx;
+  color: #333333;
+  line-height: 60rpx;
+}
+
+.disorder_error_tip {
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.disorder_error_tip text{
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.disorder_error_btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+
+.disorder_error_btns view {
+  font-size: 36rpx;
+  text-decoration: underline;
+}
+
+.disorder_error_btns view:nth-child(1) {
+  color: #666666;
+}
+
+.disorder_error_btns view:nth-child(2) {
+  color: #03A256;
+}

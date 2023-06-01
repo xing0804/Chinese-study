@@ -1,0 +1,19 @@
+<!--pages/disorderError/index.wxml-->
+<view class="disorder_error_container">
+  <image src="cloud://chinese-cloud-0g4likhsc3e76daa.6368-chinese-cloud-0g4likhsc3e76daa-1317509893/icon/errorIcon.png"></image>
+  <view class="disorder_error_score">
+    <text>得分：{{score}}分</text>
+  </view>
+  <view class="disorder_error_answer">
+    <text>您的答案为：\n{{youAnswer}}\n正确答案为：\n{{correctAnswer}}</text>
+  </view>
+  <view class="disorder_error_tip">
+    <text style="color: red;">*</text>
+    <text>（3）题答案为电脑自动评判，请同学们自行斟酌正确与否</text>
+  </view>
+  <view class="disorder_error_btns">
+    <view bindtap="endExercise">结束练习</view>
+    <view bindtap="nextQuestion">下一题</view>
+  </view>
+</view>
+<van-toast id="van-toast" />

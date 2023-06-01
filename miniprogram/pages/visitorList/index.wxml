@@ -1,0 +1,2 @@
+<!--pages/visitorList/index.wxml-->
+<list type="visitor"></list>

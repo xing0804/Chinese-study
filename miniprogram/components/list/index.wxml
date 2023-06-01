@@ -1,0 +1,21 @@
+<!--pages/list/index.wxml-->
+<view class="list_container">
+  <view class="list_background">
+    <image src="../../images/background/list_bck.png"></image>
+  </view>
+  <view class="list_list">
+    <view class="list_title">
+      <text>新高考地区必背60篇古诗文目录 </text>
+    </view>
+    <view class="list_line"></view>
+    <view class="list_item" wx:for="{{list}}" wx:key="index" data-id="{{item.poem_id}}" data-name="{{item.name}}"
+    bindtap="toDetails">
+      <view class="list_item_title">{{item.name}}</view>
+      <view class="list_item_name">
+        <!-- <text wx-if="{{item.dynasty}}">[{{item.dynasty}}]/</text> -->
+        {{item.author}}
+      </view>
+    </view>
+  </view>
+</view>
+<loading wx:if="{{isShowLoading}}"></loading>

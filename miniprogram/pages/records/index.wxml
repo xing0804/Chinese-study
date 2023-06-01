@@ -1,0 +1,63 @@
+<!--pages/records/records.wxml-->
+<view class="records_container">
+  <van-tabs active="{{activeTab}}" color="#5DE2B7" line-width="20px" bind:change="tabChange">
+    <van-tab title="背诵" name="recite" class="detail_content">
+      <van-cell wx:for="{{reciteList}}" wx_key="{{item._id}}" title="{{item.poem_name}}" value="{{item.score}}分" />
+      <view class="no_data" wx-if="{{isShowRecite}}">
+        <image src="../../images/icon/noData.png" mode="暂无数据"/>
+        <text>
+          同学，你还没有记录哟！\n快去学习吧！
+        </text>
+      </view>
+    </van-tab>
+    <van-tab title="顺序版" name="order">
+      <van-cell wx:for="{{orderList}}" wx_key="{{item._id}}" title="{{item.poem_name}}" value="{{item.score}}/{{item.total}}" />
+      <view class="no_data" wx-if="{{isShowOrder}}">
+        <image src="../../images/icon/noData.png" mode="暂无数据"/>
+        <text>
+          同学，你还没有记录哟！\n快去学习吧！
+        </text>
+      </view>
+    </van-tab>
+    <van-tab title="乱序版" name="disorder">
+      <view class="no_data" wx-if="{{isShowDisorder}}">
+        <image src="../../images/icon/noData.png" mode="暂无数据"/>
+        <text>
+          同学，你还没有记录哟！\n快去学习吧！
+        </text>
+      </view>
+      <view class="disorder_container" wx-if="{{!isShowDisorder}}">
+        <view class="left">
+          <image src="../../images/icon/disorderLine.png" mode="" />
+        </view>
+        <view class="right">
+          <view class="right_new right_box">
+            <view class="right_box_content">
+              <image src="../../images/icon/disorderNew.png" mode="" />
+              <view>
+                <view>最新得分</view>
+                <view>{{disorderNew.score}}</view>
+              </view>
+            </view>
+            <view class="right_date">
+              {{disorderNew.date}}
+            </view>
+          </view>
+          <view class="right_high right_box">
+            <view class="right_box_content">
+              <image src="../../images/icon/disorderHigh.png" mode="" />
+              <view>
+                <view>最高得分</view>
+                <view>{{disorderHigh.score}}</view>
+              </view>
+            </view>
+            <view class="right_date">
+              {{disorderHigh.date}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>
+<van-toast id="van-toast" />

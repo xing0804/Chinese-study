@@ -1,0 +1,31 @@
+/* pages/visitorPoems/index.wxss */
+
+.visitor_poems_container {
+  padding-top: 58rpx;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+.poems_title {
+  color: #333333;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.poems_author {
+  color: #666666;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 28rpx;
+}
+
+.poems_content {
+  width: 514rpx;
+  padding: 50rpx;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+  overflow-wrap: break-word; 
+  line-height: 52rpx;
+}

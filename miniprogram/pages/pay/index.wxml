@@ -1,0 +1,17 @@
+<!--pages/pay/index.wxml-->
+<view class="pay_container">
+  <image src="cloud://chinese-cloud-0g4likhsc3e76daa.6368-chinese-cloud-0g4likhsc3e76daa-1317509893/icon/payBackground.png">
+    <view class="pay_title">
+      <text>新高考语文集分宝</text>
+    </view>
+    <view class="pay_qrcode">
+
+    </view>
+    <view class="pay_money">
+      微信扫码支付：￥2.88
+    </view>
+    <view class="pay_tip">
+      一次付费，长期使用。开发不易，多谢支持！
+    </view>
+  </image>
+</view>

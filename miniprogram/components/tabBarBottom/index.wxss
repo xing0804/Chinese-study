@@ -1,0 +1,32 @@
+/* components/tabBarBottom/index.wxss */
+.tabBar {
+  width: 750rpx;
+  height: 100rpx;
+  padding-bottom: 40rpx;
+  padding-top: 22rpx;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 9999;
+}
+
+.tabBar_item {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabBar_item image {
+  width: 43rpx;
+  height: 43rpx;
+}
+
+.tabBar_item text {
+  font-size: 28rpx;
+  color: #03A256;
+  margin-top: 12rpx;
+}

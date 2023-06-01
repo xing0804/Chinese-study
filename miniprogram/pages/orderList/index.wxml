@@ -1,0 +1,2 @@
+<!--pages/orderList/index.wxml-->
+<list type="order"></list>

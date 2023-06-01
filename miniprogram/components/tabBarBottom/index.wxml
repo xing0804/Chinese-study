@@ -1,0 +1,11 @@
+<!--components/tabBarBottom/index.wxml-->
+<view class="tabBar">
+  <view class="tabBar_item" bindtap="goPrevQuestion">
+    <image src="../../images/icon/prev.png"></image>
+    <text>上一题</text>
+  </view>
+  <view class="tabBar_item" bindtap="goNextQuestion">
+    <image src="../../images/icon/next.png"></image>
+    <text>下一题</text>
+  </view>
+</view>

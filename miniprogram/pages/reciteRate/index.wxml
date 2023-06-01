@@ -1,0 +1,12 @@
+<!--pages/reciteRate/index.wxml-->
+<view class="recite_rate_container">
+  <view class="score">
+    您的得分为：<text>{{score}}分</text>
+  </view>
+  <view class="content">
+    <text>{{content}}</text>
+  </view>
+  <view class="comment">
+    <text>{{comment}}</text>
+  </view>
+</view>

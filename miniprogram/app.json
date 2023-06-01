@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/user/index",
+    "pages/records/index",
+    
+    "pages/orderList/index",
+    "pages/home/index",
+    "pages/deepLearn/index",
+    "pages/noOpen/index",
+    "pages/newWord/index",
+    "pages/disorderError/index",
+    "pages/reciteRate/index",
+    "pages/recite/index",
+    "pages/poemsDetail/index",
+    "pages/reviewList/index",
+    "pages/visitorPoems/index",
+    "pages/reciteList/index",
+    "pages/index/index",
+    "pages/uploadFile/index",
+    "pages/getOpenId/index",
+    
+    "components/list/index",
+    "pages/visitorList/index",
+    "pages/order/index",
+    "components/tabBarBottom/index",
+    "pages/disorder/index",
+    "pages/pay/index",
+    "components/loading/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "新高考语文集分宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#03A256",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./images/icon/home_no.png",
+        "selectedIconPath": "./images/icon/home.png"
+      },
+      {
+        "pagePath": "pages/reciteList/index",
+        "text": "背诵",
+        "iconPath": "./images/icon/recite_no.png",
+        "selectedIconPath": "./images/icon/recite.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "./images/icon/user_no.png",
+        "selectedIconPath": "./images/icon/user.png"
+      }
+    ],
+    "usingComponents": {}
+  },
+  "sitemapLocation": "sitemap.json"
+}

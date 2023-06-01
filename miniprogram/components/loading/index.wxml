@@ -1,0 +1,4 @@
+<!--components/loading/index.wxml-->
+<view class="loading_mask">
+  <van-loading color="#1989fa" /> 
+</view>

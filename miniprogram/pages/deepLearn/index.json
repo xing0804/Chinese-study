@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "深入学习",
+  "usingComponents": {
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

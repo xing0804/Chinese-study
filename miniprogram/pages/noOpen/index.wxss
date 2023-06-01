@@ -1,0 +1,17 @@
+/* pages/noOpen/index.wxss */
+
+.no_open_container {
+  text-align: center;
+  padding-top: 250rpx;
+}
+
+image {
+  width: 350rpx;
+  height: 344rpx;
+}
+
+view {
+  margin-top: 70rpx;
+  font-size: 32rpx;
+  color: #333333;
+}

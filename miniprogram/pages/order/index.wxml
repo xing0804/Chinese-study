@@ -1,0 +1,32 @@
+<!--pages/order/index.wxml-->
+<view class="order_container">
+  <view class="order_question">
+    <view class="question_title">
+      <text>题目</text>
+    </view>
+    <view class="line"></view>
+    <view class="question_content">
+      <text>{{question}}</text>
+    </view>
+    <view class="question_tip">
+      句子之间用“，”隔开
+    </view>
+  </view>
+  <view class="order_answer">
+    <view class="answer_title">答题区</view>
+    <view class="line"></view>
+    <van-field class="answer_input" type="textarea" autosize value="{{ youAnswer }}" placeholder="请输入你的答案" border="{{ false }}" bind:change="onChangeContent" />
+  </view>
+  <view class="answer_btn">
+    <van-button type="primary" round size="large" bind:click="submitAnswer">提交</van-button>
+  </view>
+</view>
+<tab-bar-bottom bindgoPrevQuestion="goPrevQuestion" bindgoNextQuestion="goNextQuestion"></tab-bar-bottom>
+<van-dialog use-slot title="{{answerArr[answerFlag]}}" show="{{ showDialog }}" show-cancel-button bind:close="onCloseDialog" bind:confirm="onConfirmDialog" confirmButtonText="下一题" cancelButtonText="退出练习" confirm-button-color="#58D685">
+  <view class="dialog_score">得分：{{score}}分</view>
+  <view class="dialog_you_answer" wx:if="{{answerFlag === 1}}">你的答案：{{youAnswer}}</view>
+  <view class="dialog_correct_answer" wx:if="{{answerFlag === 1}}">正确答案：{{correctAnswer}}</view>
+</van-dialog>
+<van-notify id="van-notify" />
+
+<loading wx:if="{{isShowLoading}}"></loading>

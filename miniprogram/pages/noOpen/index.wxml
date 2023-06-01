@@ -1,0 +1,7 @@
+<!--pages/noOpen/index.wxml-->
+<view class="no_open_container">
+  <image src="cloud://chinese-cloud-0g4likhsc3e76daa.6368-chinese-cloud-0g4likhsc3e76daa-1317509893/icon/noOpen.png"></image>
+  <view>
+    <text>该功能暂未开放</text>
+  </view>
+</view>

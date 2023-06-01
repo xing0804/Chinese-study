@@ -1,0 +1,26 @@
+<!--pages/recite/index.wxml-->
+<view class="recite_container">
+  <van-field
+    class="recite_input"
+    type="textarea"
+    autosize
+    value="{{ reciteContent }}"
+    placeholder="点击按钮开始背诵"
+    border="{{ false }}"
+    bind:change="onChangeContent"
+  />
+
+  <view class="loading_container">
+    <view class="loading_circle">
+      <view class="{{isAnimation ? 'loading_slip_animation loading_slip' : 'loading_slip'}}"></view>
+      <view class="{{isAnimation ? 'loading_slip_animation loading_slip' : 'loading_slip'}}"></view>
+      <view class="{{isAnimation ? 'loading_slip_animation loading_slip' : 'loading_slip'}}"></view>
+      <view class="{{isAnimation ? 'loading_slip_animation loading_slip' : 'loading_slip'}}"></view>
+      <view class="{{isAnimation ? 'loading_slip_animation loading_slip' : 'loading_slip'}}"></view>
+    </view>
+  </view>
+
+  <view class="recite_btn">
+    <van-button type="primary" round size="large" bind:click="beginRecite">{{reciteBtnText[reciteFlag]}}</van-button>
+  </view>
+</view>

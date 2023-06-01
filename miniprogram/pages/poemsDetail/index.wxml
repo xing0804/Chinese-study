@@ -1,0 +1,22 @@
+<!--pages/visitorPoems/index.wxml-->
+<view class="visitor_poems_container">
+  <van-tabs active="text" color="#5DE2B7" line-width="20px">
+    <van-tab title="原文" name="text" class="detail_content">
+      <view class="poems_title has_note" data-noteid="1" bindtap="showNote">{{details.name}}</view>
+      <view class="poems_author">{{details.author}}</view>
+      <view class="poems_content">
+        <text wx:for="{{textArr}}" wx:key="index" data-noteid='{{item.noteId}}' bindtap='showNote' class="{{item.isnote ? 'under_line' : ''}}">{{item.text}}</text>
+        <!-- <text id="poemContent">{{poemContent}}</text> -->
+        <!-- <rich-text space="nbsp" nodes="{{poemContent}}"></rich-text> -->
+      </view>
+    </van-tab>
+    <van-tab title="译文" name="translate">
+      <view class="poems_title">{{details.name}}</view>
+      <view class="poems_author">{{details.author}}</view>
+      <view class="poems_content">
+        <text> {{details.translate}} </text>
+      </view>
+    </van-tab>
+  </van-tabs>
+  <van-dialog id="van-dialog" custom-class="dialog_custom_class"/>
+</view>

@@ -1,0 +1,13 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "顺序版",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "tab-bar-bottom": "../../components/tabBarBottom/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "loading": "../../components/loading/index"
+  }
+}

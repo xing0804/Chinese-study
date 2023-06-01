@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "学习记录",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

@@ -1,0 +1,31 @@
+<!--pages/user/index.wxml-->
+<view class="user_container">
+  <view class="user_background">
+    <image src="../../images/background/user_bck.png"></image>
+  </view>
+  <view class="user_userinfo">
+    <view class="user_userinfo_avator">
+      <!-- <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image src="{avatarUrl}}"></image>
+      </button> -->
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="user_userinfo_name">
+      {{userInfo.nickName}}
+    </view>
+  </view>
+  <view class="user_learninfo">
+    <view class="user_learninfo_item">
+      <view>我的进度</view>
+      <view>{{schedule}}%</view>
+    </view>
+    <view class="user_learninfo_line"></view>
+    <view class="user_learninfo_item">
+      <view>我的段位</view>
+      <view>{{level}}</view>
+    </view>
+  </view>
+  <view class="user_records">
+    <van-cell title="学习记录" is-link url="/pages/records/index"/>
+  </view>
+</view>

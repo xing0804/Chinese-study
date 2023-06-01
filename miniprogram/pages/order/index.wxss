@@ -1,0 +1,30 @@
+/* pages/order/index.wxss */
+
+.van-cell {
+  height: 300rpx;
+  border-radius: 10rpx;
+  margin-top: 34rpx;
+}
+
+.dialog_score {
+  text-align: center;
+  font-size: 32rpx;
+  color: #333333;
+  margin: 28rpx 0;
+}
+
+.van-button__text {
+  font-size: 36rpx;
+}
+
+.dialog_you_answer, .dialog_correct_answer {
+  font-size: 32rpx;
+  color: #333333;
+  padding: 0 32rpx;
+}
+
+.dialog_correct_answer {
+  margin: 40rpx 0;
+}
+
+

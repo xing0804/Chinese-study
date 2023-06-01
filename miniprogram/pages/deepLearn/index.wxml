@@ -1,0 +1,83 @@
+<!--pages/deepLearn/index.wxml-->
+<view class="deep_learn_container">
+  <view class="top_image">
+    <image src="../../images/background/deep_back.png"></image>
+  </view>
+  <view class="deep_learn_question">
+    <view class="deep_learn_question_top">
+      <text>情景式默写</text>
+    </view>
+    <view class="deep_learn_line"></view>
+    <view class="deep_learn_question_content">
+      <view class="question_content_item" data-flag="order" bindtap="goPage">
+        <image src="../../images/icon/order.png" class="question_img"></image>
+        <text>顺序版</text>
+      </view>
+      <view class="question_content_item" data-flag="disorder" bindtap="goPage">
+        <image src="../../images/icon/disorder.png" class="question_img"></image>
+        <text>乱序版</text>
+      </view>
+      <view class="question_content_item" data-flag="newword" bindtap="goPage">
+        <image src="../../images/icon/newWord.png" class="question_img"></image>
+        <text>难写生字</text>
+      </view>
+    </view>
+  </view>
+  <view class="expand">
+    <view class="expand_top">
+      <text>扩展学习</text>
+      <text style="float: right;" bindtap="goNoOpen">更多＞</text>
+    </view>
+    <view class="deep_learn_line"></view>
+    <view class="expand_content"  bindtap="goNoOpen">
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend1.png" class="expand_img"></image>
+        <text>现代汉语字典</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend2.png" class="expand_img"></image>
+        <text>成语词典</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend3.png" class="expand_img"></image>
+        <text>古汉语词典</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend4.png" class="expand_img"></image>
+        <text>电子教材</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend5.png" class="expand_img"></image>
+        <text>整本书阅读</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend6.png" class="expand_img"></image>
+        <text>其他古诗文</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend7.png" class="expand_img"></image>
+        <text>诗词飞花</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend8.png" class="expand_img"></image>
+        <text>历年真题</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend9.png" class="expand_img"></image>
+        <text>模拟试题</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend10.png" class="expand_img"></image>
+        <text>素材积累</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/extend11.png" class="expand_img"></image>
+        <text>作文园地</text>
+      </view>
+      <view class="expand_content_item">
+        <image src="../../images/icon/other.png" class="expand_img"></image>
+        <text>其他</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,92 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+/* 答题部分公共样式 */
+.order_container {
+  background-color: #EDF5F1;
+  padding: 50rpx;
+  height: auto;
+  min-height: 100vh;
+  padding-bottom: 340rpx;
+}
+
+.order_question {
+  padding: 48rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+}
+
+.question_content {
+  font-size: 32rpx;
+  line-height: 64rpx;
+  color: #333333;
+  margin-top: 48rpx;
+}
+
+.question_tip {
+  text-align: right;
+  color: #03A256;
+  font-size: 24rpx;
+  margin-top: 40rpx;
+}
+
+.answer_btn {
+  position: fixed;
+  bottom: 200rpx;
+  width: 650rpx;
+  z-index: 999;
+}
+
+.van-button__text {
+  font-size: 40rpx;
+  letter-spacing: 2rpx;
+}
+
+.line {
+  width: 144rpx;
+  height: 5rpx;
+  background: #5DE2B7;
+  border-radius: 3rpx;
+  margin: 0 auto;
+  margin-top: 24rpx;
+}
+
+.question_title, .answer_title {
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #999999;
+}
+
+.answer_title {
+  margin-top: 36rpx;
+}
+
+.van-ellipsis {
+  font-size: 32rpx;
+}
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

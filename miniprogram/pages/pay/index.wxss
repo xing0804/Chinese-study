@@ -1,0 +1,49 @@
+/* pages/pay/index.wxss */
+
+.pay_container {
+  background-color: #4694FF;
+  height: 100vh;
+  text-align: center;
+}
+
+.pay_container image {
+  width: 662rpx;
+  height: 854rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pay_title {
+  color: #333333;
+  font-size: 32rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 205rpx;
+}
+
+.pay_qrcode {
+  width: 332rpx;
+  height: 332rpx;
+  background-color: #4694FF;
+  position: absolute;
+  top: 220rpx;
+  left: 164rpx;
+}
+
+.pay_money {
+  color: #666666;
+  font-size: 28rpx;
+  position: absolute;
+  top: 580rpx;
+  left: 192rpx;
+}
+
+.pay_tip {
+  color: #999999;
+  font-size: 26rpx;
+  position: absolute;
+  top: 698rpx;
+  left: 78rpx;
+}

@@ -1,0 +1,78 @@
+/* pages/user/index.wxss */
+
+.user_container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #EDF0F5;
+}
+
+.user_background {
+  width: 100%;
+  height: auto;
+}
+
+.user_background image {
+  width: 100%;
+}
+
+.user_userinfo {
+  position: absolute;
+  top: 380rpx;
+  left: 293rpx;
+  text-align: center;
+}
+
+.user_userinfo_avator {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.user_userinfo_avator image {
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  border: #1BD3C4 solid 8rpx;
+}
+
+.user_userinfo_name {
+  margin-top: 32rpx;
+}
+
+.user_learninfo {
+  width: 600rpx;
+  height: 174rpx;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  margin-top: 186rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_learninfo_item {
+  width: 298rpx;
+  text-align: center;
+}
+
+.user_learninfo_item view:nth-child(1) {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.user_learninfo_item view:nth-child(2) {
+  font-size: 30rpx;
+  color: #333333;
+  margin-top: 20rpx;
+}
+
+.user_learninfo_line {
+  height: 136rpx;
+  width: 1rpx;
+  background-color: #666666;
+}
+
+.user_records {
+  margin-top: 68rpx;
+}

@@ -1,0 +1,35 @@
+<!--pages/home/index.wxml-->
+<view class="home_container">
+  <view class="home_swiper">
+    <swiper indicator-dots="{{true}}" indicator-color="rgba(0,0,0,.3)" indicator-active-color="rgba(255,255,255)" circular="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" style="height:100%">
+      <block wx:for="{{swiperArr}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item">
+            <image src="{{ item }}" class="swiper_img"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="home_menu">
+    <view class="home_menu_item" wx:for="{{ menuList }}" wx:key="index" data-code="{{item.code}}" data-pageurl="{{item.pageUrl}}" bindtap="navigatorToPage">
+      <image src="{{ item.imgUrl }}" class="menu_img"></image>
+      <text>{{ item.title }}</text>
+    </view>
+  </view>
+  <view class="home_info">
+    <view class="home_info_icon">
+      消息
+    </view>
+    <view class="home_info_message">
+      广告位招租中  详情联系：13888888888
+    </view>
+  </view>
+  <view class="home_card">
+    <image src="../../images/icon/yinup.png"></image>
+    <view class="home_card_message">
+      书山有路勤为径,学海无涯苦作舟。
+    </view>
+    <image class="image_down" src="../../images/icon/yindown.png"></image>
+  </view>
+</view>

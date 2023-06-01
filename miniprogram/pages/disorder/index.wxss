@@ -1,0 +1,22 @@
+/* pages/disorder/index.wxss */
+
+.van-cell {
+  height: 160rpx;
+  border-radius: 10rpx;
+  margin-top: 34rpx;
+}
+
+.question_content {
+  margin-top: 20rpx;
+}
+
+.dialog_score {
+  text-align: center;
+  font-size: 32rpx;
+  color: #333333;
+  margin: 28rpx 0;
+}
+
+.van-button__text {
+  font-size: 36rpx;
+}
